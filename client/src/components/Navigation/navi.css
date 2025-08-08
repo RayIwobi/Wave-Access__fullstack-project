@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    overflow: visible;
+}
+.active{
+    color: blue;
+}
+.notactive{
+    color: black;
+}
+/* ////LINK ACTIVE AND NOT ACTIVE */
+.nav-container{
+    background-color: #13829f;
+    width: 100%;
+    height: 49px;
+    color: white;
+}
+
+.nav-container a{
+    text-decoration: none;   
+}
+
+.meterlogo{
+    cursor:pointer;
+}
+
+.requestButton{
+    color: red;
+    width: 170px;
+    height: 29px;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 19px;
+    font-weight: 600;
+    padding-top: 3px;
+    margin-top: -13px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 1px 16px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 1px 16px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 16px 1px rgba(0,0,0,0.75);
+}
+
+.requestButton:hover{
+    background-color: #e7e5d7;
+    border: 1px solid gray;
+    
+}
+
+.inner-contaoner{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+}
+
+.phone-numbers{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h4{
+    display: flex;
+    align-items: center;
+}
+.photoimage{
+    display: flex;
+    align-items: center;
+}
+
+.backend{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 120px;
+    color: white;
+}
+.backend a{
+    color: white;
+    font-size: 19px;
+    cursor:pointer;
+}
+
+.backend a:hover{
+    color:red;
+}
+
+
+ /* Link Navigation Section */
+
+ .midnavInner{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: -35px;
+    flex-wrap: wrap;
+ }
+
+ .linknavs{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 400px;
+    font-size: 20px;
+ }
+
+ .linknavs a{
+    text-decoration: none;
+    color: black;
+ }
+  .linknavs a:hover{
+    color: red;
+  }
+
+.service-mod a{
+    font-size: 19px;
+}
+
+.servicesArea img{
+    width: 12px;
+    height: 9px;
+    margin-left: -10px;
+}
+
+ .searchFunction{
+    display: flex;
+    align-items: center;
+ }
+
+ .searchbar{
+    font-size: 19px;
+ }
+.searchbarimg{
+    width: 90px;
+    height: 90px;
+}
+
+ .logo-name{
+    display: flex;
+    align-items: center;
+ }
+ .logo-name h3{
+    font-size: 30px;
+ }
+ @media screen and (max-width:600px){
+    .logo-name{
+        display: none;
+    }
+ }
+.search-section1{
+    display: flex;
+    align-items: center;
+}
+
+ .search-input{
+    font-size: 15px;
+    padding-right: 40px;
+    position: relative;
+ }
+
+ .searchicon{
+    position: absolute;
+    margin-top: -15px;
+    margin-left: 194px;
+    cursor: pointer;
+    padding-left: 2px;
+ }
+
+ .logoinlinkNav{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .logoinlinkNav h3{
+    font-size: 25px;
+ }
+
+ .logoinlinkNav img{
+    width: 80px;
+    height: 80px;
+ }
+ .linknavs{
+    background-color: white;
+ }
+
+ .linknavs a{
+    font-size: 20px;
+    margin: 10px;
+    background-color: white;
+ }
+
+ .linknavs li:hover{
+    color: red;
+    cursor: pointer;
+ }
+ .logoNAme{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+ }
+ .logoNAme a{
+    color: white;
+ }
+ .logoNAme h3{
+    margin-left: 7px;
+    font-size: 25px;
+ }
+ .mobileMenu-topBar1{
+    display: none;
+ }
+
+
+ @media screen and (max-width:600px){
+    .phone-numbers{
+        display:none;
+    }
+    .photoimage{
+        display:none;
+    }
+    .requestService{
+        display: none;
+    }
+    .mobileMenu-topBar1{
+        display: block;
+        width: 100vw;
+        height: 50px;
+        direction: rtl;
+        cursor: pointer;
+        z-index: 999;
+        margin-bottom: -10px;
+    }
+    .desktopMenu{
+        display: none;
+    }
+    .search-section1{
+        display: none;
+    }
+    .searchFunction1{
+        display: none;
+    }
+    .logoinlinkNav1 h3{
+        display: none;
+    }
+ }

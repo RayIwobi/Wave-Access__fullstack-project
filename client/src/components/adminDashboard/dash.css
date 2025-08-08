@@ -1,0 +1,143 @@
+.admin-settings{
+    background-color: #BDE8CA;
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+.adminAreacontainer{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+}
+
+.admin-profileImage{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.admin-sidebar{
+    background-color: #393E46;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+}
+
+.logoutbtn-back{
+    display: flex;
+    align-items: center;
+}
+
+.admin-sidebar img{
+    margin-left: 70px;
+    margin-bottom: 10px;
+}
+
+.admin-topButtons{
+    display: flex;
+    align-items: center;
+}
+
+.adminPersonal h2{
+    text-align: left;
+    font-size: 25px;
+}
+
+.adminContent{
+    margin-bottom: 20px;
+}
+
+.adminContent p{
+    font-size: 18px;
+}
+
+
+button{
+    width: 150px;
+    height: 50px;
+    margin: 2px;
+
+}
+
+.boddy{
+    background-color: blue;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 1px 16px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 1px 16px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 16px 1px rgba(0,0,0,0.75);
+}
+
+.baskin{
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #FFCC00;
+    box-shadow: 0px 1px 16px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 1px 16px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 16px 1px rgba(0,0,0,0.75);
+}
+
+
+.btn1-section{
+    margin-top: 30px;
+}
+
+.buttonone-img{
+    width: 600px;
+}
+.button-results{
+    font-size: 25px;
+    font-weight: bold;
+    color: brown;
+    margin-top: 50px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px){
+    .adminAreacontainer{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    .admin-sidebar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+     .admin-sidebar img{
+        margin-right: auto;
+        margin-left: auto;
+     }
+     .adminContent h2{
+        text-align: center;
+     }
+     .button-Navigation{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;        
+     }
+     .button-results{
+        width: 80%;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 40px;
+        color: red;
+     }
+     .buttonone-img{
+        width: 100%;
+     }
+     .btn1-section{
+        font-size: 18px;
+     }
+}

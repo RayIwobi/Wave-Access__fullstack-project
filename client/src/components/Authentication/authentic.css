@@ -1,0 +1,372 @@
+.uni-header{
+    font-family:" Libre Baskerville";
+    font-weight: 400;
+}
+
+.uni-body{
+    font-family: "Poppins";
+}
+
+#login-form{
+    margin-top: -100px;
+}
+
+.sign-up-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-bottom: 100px;
+    margin-top: 40px;
+}
+
+.dashboard-container{
+    padding-top: 40px;
+}
+
+.dashboard-settings{
+    background-color: #F8EDED;
+    padding-bottom: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.dashboard-sidebar1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+.dashboardPersonal2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+}
+.dashboardContainer{
+    margin-top: 30px;
+    margin-bottom: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dahboard-imag img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.dashboard-sidebar{
+    text-align: center;
+    flex: 50%;
+}
+
+@media screen and (max-width:600px){
+    .profile-navigation h3{
+        width: 330px;
+        text-align: center;
+        font-size: 19px;
+        font-weight: 500;
+    }
+}
+.profile-navigation{
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media screen and (max-width:600px){
+    .profile-navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.profile-navigation a{
+    text-decoration: none;
+    background-color: #F3C623;
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+    width: 350px;
+    height: 150px;
+    border-radius: 10px;
+    margin-top: 35px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-shadow: 0px 1px 16px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 1px 16px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 16px 1px rgba(0,0,0,0.75);
+}
+
+.profile-navigation a:hover{
+    background-color: #D6D46D;
+}
+
+
+.dashboardIcons img{
+    width: 90px;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sign-up-form{
+    width: 350px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #13829f;
+}
+.sign-up-form h2,h5{
+    font-family: 'Libre Baskerville';
+}
+label{
+    font-family: 'Libre Baskerville';
+}
+
+label{
+    display: block;
+    margin-bottom: 8px;
+}
+
+input{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: #13829f;
+}
+
+.submit-button{
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 7px;
+    font-weight: 600;
+    font-size: 17px;
+    font-family: 'Libre Baskerville';
+}
+
+.submit-button:hover{
+    background-color: white;
+    color: black;
+    border:#13829f 2px solid;
+}
+
+#submit-button{
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 7px;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'Libre Baskerville';
+}
+
+#submit-button:hover{
+    background-color: white;
+    color: black;
+    border:#13829f 2px solid;
+}
+
+
+.bottom-link{
+    display: flex;
+    align-items: center;
+    font-family: "Libre Baskerville"; 
+    font-size: 14px;  
+}
+.bottom-link a{
+    color: blue;
+    font-size: 15px;
+}
+
+
+h2{
+    text-align: center;
+}
+
+h5 a{
+    text-decoration: none;
+}
+
+h5{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.forgotpassword{
+    text-decoration: none;
+    color: blue;
+    font-weight: 500;
+    font-family: "Libre Baskerville";
+}
+.forgotpassword:hover{
+    color: black;
+}
+
+.homelink{
+    margin-top: 10px;
+    font-weight: 600;
+}
+.forgotpwd{
+    font-family: "Libre Baskerville";
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.update-profile{
+    background-color: black;
+    color: white;
+    font-family: "Libre Baskerville";
+    font-size: 15px;
+    border-radius: 5px;
+    font-weight: 700;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+.update-profile:hover{
+    background-color: white;
+    border: 2px solid #13829f;
+    color: black;
+}
+
+.homelink a{
+    text-decoration: none;
+    color: blue;
+}
+
+.dashboard-container{
+    margin: 40px;
+}
+
+.user-details div{
+    margin-bottom: 15px;
+}
+
+.user-details button{
+    width: 150px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.dashboard-container h3{
+    font-size: 20px;
+}
+
+.dashboard-container h2{
+    font-size: 15px;
+    color: blue;
+    cursor: pointer;
+}
+
+.dashboard-container a{
+    text-decoration: none;
+}
+
+.dashboard-title{
+    display: block;
+    text-align: center;
+    font-family: "Libre Baskerville";
+}
+
+ .dashboard-title a{
+    font-size: 14px;
+    font-weight: 200;
+ }
+
+.update-form{
+    width: 300px;
+}
+
+.logoutbutton{
+    width:100px;
+    height:40px;
+    font-weight:600;
+    color:white;
+    background-color:black;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: "Libre Baskerville";
+}
+.logoutbutton:hover{
+    border: 2px solid #13829f;
+    background-color: white;
+    color: black;
+}
+
+.profilearea{
+    font-family: "Libre Baskerville";
+}
+
+.order-results{
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: rgb(245, 228, 197);
+}
+.order-results:hover{
+    background-color: #13829f;
+}
+
+
+@media screen and (max-width:600px){
+    .dashboard-container{
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .update-form input{
+        width: 300px;
+    }
+}
+
+.update-form textarea{
+    width: 290px;
+    height: 40px;
+    padding-left: 5px;
+    border: 2px solid #13829f;
+    border-radius: 7px;
+}
+
+.order-details{
+    margin-top: 40px;
+}
+
+.hr{
+    margin-bottom: 30px;
+}
+
+#resetpassword-container{
+    margin-top: -120px;
+}
+
+
+/* TEST AREA */
