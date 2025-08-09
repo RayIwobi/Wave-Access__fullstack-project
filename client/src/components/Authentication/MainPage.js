@@ -8,8 +8,8 @@ function MainPage() {
 
   axios.defaults.withCredentials = true
   const handleLogout = () => {
-  // axios.get('https://nediecom-n82p.onrender.com/auth/logout')
-     axios.get('http://localhost/auth/logout')
+   axios.get('https://metering-website-app.onrender.com/auth/logout')
+   //  axios.get('http://localhost/auth/logout')
     .then(res => {
       if(res.data.status){
         navigate('/login')

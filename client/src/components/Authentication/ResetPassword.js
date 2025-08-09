@@ -21,8 +21,8 @@ const ForgotPassword = () => {
         e.preventDefault()
         setLoading(true)
 
-        // axios.post(`https://nediecom-n82p.onrender.com/auth/reset-password/${token}`, {password} , {withCredentials:true})
-       axios.post(`http://localhost:10000/auth/reset-password/${token}`, {password} , {withCredentials:true})
+         axios.post(`https://metering-website-app.onrender.com/auth/reset-password/${token}`, {password} , {withCredentials:true})
+      // axios.post(`http://localhost:10000/auth/reset-password/${token}`, {password} , {withCredentials:true})
         .then((res) => {
             if(res.data.status){
                 toast.success("Password reset successfully")

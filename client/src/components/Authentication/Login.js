@@ -18,8 +18,8 @@ function Login() {
         useEffect(() => {
             const checkAuth = async () => {
                 try{
-                   //   const res = await axios.get('https://nediecom-n82p.onrender.com/auth/verify', {
-                  const res = await axios.get('http://localhost:10000/auth/verify', {
+                      const res = await axios.get('https://metering-website-app.onrender.com/auth/verify', {
+                  //const res = await axios.get('http://localhost:10000/auth/verify', {
                         withCredentials:true
                     })
                     if (res.data.status === true){
@@ -41,8 +41,8 @@ function Login() {
                 toast.warning("You need to add your email")
             }
             e.preventDefault()
-          //   axios.post('https://nediecom-n82p.onrender.com/auth/login',{email, password}, {withCredentials: true})
-           axios.post('http://localhost:10000/auth/login',{email, password}, {withCredentials: true})
+            axios.post('https://metering-website-app.onrender.com/auth/login',{email, password}, {withCredentials: true})
+           // axios.post('http://localhost:10000/auth/login',{email, password}, {withCredentials: true})
             .then((res) => {
                 if(res.data.status){
                     navigate('/dashboard')
