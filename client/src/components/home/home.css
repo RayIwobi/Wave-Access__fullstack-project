@@ -1,7 +1,3 @@
-/*#8458B3; ; #f1c0c4; , */
-
-
-/* START PHOTO/VIDEO BANNER */
 
 .banner-settings{
     display: flex;
@@ -65,7 +61,7 @@
     }
     
 }
-/* END PHOTO/VIDEO BANNER */
+/* END PHOTO VIDEO BANNER */
 
 
 /*----------------------------------------------------*/
@@ -106,7 +102,7 @@
 }
 /* ------------------------------------- */
 
-/* /////NEW SITE METER CONTENT/// */
+/* NEW SITE METER CONTENT */
 
 
 .mid-contentflex2 img{
@@ -211,7 +207,7 @@
     cursor:pointer;
 }
 
-/* -----------//UPPER SECTION--------- */
+/* -----------UPPER SECTION--------- */
 .colorcorner{
     background-color: #DBE4C9;
     padding: 20px;
@@ -280,7 +276,7 @@ span{
 }
 
 
-/* -----------//UPPER SECTION--------- */ */
+/* -----------UPPER SECTION--------- */
 
 
 

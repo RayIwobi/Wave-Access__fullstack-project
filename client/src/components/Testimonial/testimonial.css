@@ -1,15 +1,8 @@
-/* components/TestimonialsSlider.css */
-
 .slider-container {
   width: 100%;
   overflow: hidden;
   padding: 2rem 0;
   background-color: #f9f9f9;
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto; */
 }
 .slider-container h2{
   font-size: 25px;
