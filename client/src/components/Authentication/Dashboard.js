@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import './authentic.css'
@@ -7,7 +7,6 @@ import email from './assets/email.png'
 import user from './assets/user.png'
 import analysis from './assets/analysis.png' 
 import admin from './assets/admin.png'  
-import image1 from './assets/image1.png'
  
 
 function Dashboard() { 
@@ -41,8 +40,6 @@ function Dashboard() {
         console.error('Error fetching user:', err);
       });
   }, []);
-
-
 
 
    axios.defaults.withCredentials = true
@@ -98,7 +95,6 @@ function Dashboard() {
 
           
         <div className='dashboardPersonal2'>
-
         <div className='forMobile'>
           <h2>Personal Information</h2>
           
@@ -127,7 +123,6 @@ function Dashboard() {
           <img src={analysis} alt=''  />
           </Link>
       </div>
-
 
       </div>
     </div>

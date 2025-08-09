@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import './authentic.css'
 import axios from 'axios'
 import { Link, useNavigate } from 'react-router-dom'
@@ -13,8 +13,6 @@ function Login() {
 
         const [email, setEmail] = useState('')
         const [password, setPassword] = useState('')
-
-        //const [message, setMessage] = useState('')
 
         
         useEffect(() => {
@@ -35,8 +33,6 @@ function Login() {
             }
             checkAuth() 
         },[navigate])
-        
-
         
 
         axios.defaults.withCredentials = true   //must be added to prevent error generation from backend

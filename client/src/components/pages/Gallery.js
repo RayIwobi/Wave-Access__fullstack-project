@@ -1,4 +1,3 @@
-import React from 'react'
 import ImageSlider from './imageslider/ImageSlider.js'
 import img2 from './galleryImages/img2.webp'
 import tall from './galleryImages/tall.jpg'

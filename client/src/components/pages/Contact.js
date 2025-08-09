@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import {useState} from 'react'
 import img2 from './assets/img2.jpg'
 import axios from 'axios'
 
@@ -33,7 +33,6 @@ function Contact() {
         </div>
 
 
-        
         <div className='map-form-section'>
           <div className='mapAndForm'>
           <div className='contact-map'>

@@ -19,7 +19,6 @@ import Services from './components/pages/Services';
 import Gallery from './components/pages/Gallery';
 import Admin from './components/adminDashboard/Admin.js'
 import AdminLogin from './components/adminDashboard/AdminLogin.js'
-// import Recruitment from './components/recruitment/Recruitment.js'
 import MeteringCatalogs from './components/pages/MeteringCatalogs.js';
 import Recruitments from './components/pages/Recruitments.js';
 
@@ -42,7 +41,6 @@ function App() {
           <Route path='/servicerequest' element={<ServiceRequest/>}/>
           <Route path='/adminlogin' element={<AdminLogin/>}/>
           <Route path='/admin' element={<Admin/>}/>
-          {/* <Route path='/recruitment' element={<Recruitment/>}/> */}
           <Route path='/catalog' element={<MeteringCatalogs/>}/>
           <Route path='/recruitment' element={<Recruitments/>}/>
 

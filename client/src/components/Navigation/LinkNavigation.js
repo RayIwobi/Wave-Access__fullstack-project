@@ -1,9 +1,7 @@
-import React from 'react'
 import meters from './assets/meter.png'
 import search from './assets/search.png'
 import './navi.css'
 import { NavLink, Link, useLocation } from 'react-router-dom' 
-import downarrow from './assets/downarrow.png'
 import Menu from '../menu/Menu'
 
 
@@ -47,7 +45,7 @@ function LinkNavigation({color, setColor}) {
                     <NavLink to='/contact' className={({isActive}) => (isActive ? 'active':'notactive')}><div>Contact</div></NavLink>
                 </ul>
             </div>
-             {/* <img src={downarrow} alt='downarrow' className='downarrow'/> */}
+
             <div className='search-section1'>
                 <input 
                     type='text'
@@ -57,6 +55,7 @@ function LinkNavigation({color, setColor}) {
 
             <img src={search} alt='search' className='searchicon' style={{width:'30px', height:'30px'}}/>
             </div>
+            
             <div className='mobileMenu-topBar1'>
                 <Menu  />
             </div>

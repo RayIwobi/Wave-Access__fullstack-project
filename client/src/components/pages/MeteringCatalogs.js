@@ -1,4 +1,3 @@
-import React from 'react'
 import {Link} from 'react-router-dom'
 import catalog from './assets/catalog.jpg'
 import flow from './assets/flow.jpg'
@@ -86,7 +85,6 @@ function MeteringCatalogs() {
             </Link>
           </div>
           
-
         </div>
         </div>
       </div>

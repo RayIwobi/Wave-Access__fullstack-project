@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import {useState, useEffect} from 'react'
 import axios from 'axios'
 import {Link} from 'react-router-dom'
 import './infoupload.css';
@@ -15,7 +15,6 @@ function Recruitment() {
 
     
     const [image, setImage] = useState([])
-    // const {_id} = useParams()
 
     const [items, setItems] = useState({
       productname:'',
@@ -101,14 +100,14 @@ function Recruitment() {
       <ToastContainer position="top-right" autoClose={3000} />
 
       <div className='uploadarea-product-link'>
-      <Link to='/uploads' style={{color:'blue', textDecoration:'underline'}}><h2>Fresh Harvest Section {'(Mixed products section)'}</h2></Link>
-      {/* <Link to='/vegetables' style={{color:'black'}}><h2>Vegetables Section</h2></Link>
-      <Link to='/spices-seasoning' style={{color:'black'}}><h2>Spices and Seasoning Section</h2></Link> */}
+      <Link to='/uploads' style={{color:'blue', textDecoration:'underline'}}><h2>Recruitment</h2></Link>
       </div>
+      
       <input 
         type='file'
         onChange={e => setFile(e.target.files[0])}
       /><br/>
+      
       <input 
         type='text'
         name='name'
@@ -116,6 +115,7 @@ function Recruitment() {
         onChange={handleChange}
         placeholder='type product name'
       /><br/>
+      
       <input 
         type='Number'
         name='dateofbirth'
@@ -123,6 +123,7 @@ function Recruitment() {
         onChange={handleChange}
         placeholder='type product weight'
       /><br/>
+      
       <input 
         type='Number'
         name='productquantity'
@@ -130,6 +131,7 @@ function Recruitment() {
         onChange={handleChange}
         placeholder='type product quantity'
       /><br/>
+      
       <input 
         type='Number'
         name='productprice'
@@ -137,6 +139,7 @@ function Recruitment() {
         onChange={handleChange}
         placeholder='type product price'
       /><br/>
+      
       <input 
         type='Number'
         name='productoldprice'
@@ -177,7 +180,6 @@ function Recruitment() {
   <thead>
     <tr>
       <th>Product Image</th>
-      
       <th>Product Name</th>
       <th>Product Weight</th>
       <th>Product Quantity</th>
@@ -229,8 +231,6 @@ function Recruitment() {
   </tbody>
 </table>
 
-
-  
       </div>
     </div>
   )

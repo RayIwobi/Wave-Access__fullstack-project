@@ -1,4 +1,3 @@
-import React from 'react'
 import productlisting from './assets/productlisting.jpg'
 
 function ButtonOne() {

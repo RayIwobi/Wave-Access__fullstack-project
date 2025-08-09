@@ -176,7 +176,6 @@ input{
     align-items: flex-start;
     flex-wrap: wrap;
     margin-bottom: 70px;
-
 }
 
 .mission-vision{
@@ -393,8 +392,6 @@ input{
     flex-wrap: wrap;
 }
 
-
-
 /* END CONTACT US */
 /* START METERING CATALOG PAGE */
 .catalog{
@@ -482,6 +479,5 @@ h2{
 #leftside4{
     height: 270px;
 }
-
 
 /* END GALLERY PAGE */
