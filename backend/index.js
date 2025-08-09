@@ -8,17 +8,12 @@ const PORT = process.env.PORT || 10000
 const app = express()
 
 
-const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
-console.log("Stripe key used:", process.env.STRIPE_SECRET_KEY);
-
 const TestRouter = require('./routes/routeTest.js')
 
-const webhookRoute = require('./routes/webhook.js'); // path to your file
-app.use('/webhook', webhookRoute);
 app.use('/text', TestRouter)
 
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://metering-website-azure.vercel.app',
     //origin:['http://localhost:3000','https://nedifoods-api.vercel.app', 'https://nedifoods.co.uk'],
     credentials:true,
 }))
@@ -39,7 +34,6 @@ const cloudinary = require('cloudinary').v2;
 const { CloudinaryStorage } = require('multer-storage-cloudinary')
 
 const Products = require('./models/newArrivals/Products.js')
-const PendingCart = require('./models/PendingCart.js')
 // const commentsModel = require('./models/comments/Comments.js')
 const Category = require('./models/Category.js')
 
@@ -53,7 +47,6 @@ app.use(express.static('public'))
 
 app.use('/auth', UserRouter)
 app.use('/comments', CommentRouter)
-app.use('/orders', require('./routes/orderRoute'));
 
 
 
@@ -330,74 +323,6 @@ app.get('/categories', async (req, res) => {
 
 
 //STRIPE PAYMENT CODE
-app.post('/create-checkout-session', async (req, res) => {
-  const { cart, userId, userEmail, username, userphone, useraddress, deliveryMethod  } = req.body;
-
-  if (!cart || !Array.isArray(cart)) {
-    return res.status(400).json({ error: 'Invalid cart data' });
-  }
-
-  try {
-    // Save the cart and user info in DB
-    const savedCart = await PendingCart.create({
-      userId,
-      email: userEmail,
-      username,
-      userphone,
-      useraddress,
-      cart,
-      deliveryMethod
-    });
-
-        const line_items = [
-      ...cart.map(item => ({
-        price_data: {
-          currency: 'gbp',
-          product_data: {
-            name: item.productname,
-          },
-          unit_amount: Math.round(item.productprice * 100), // Stripe expects price in pence
-        },
-        quantity: item.productquantity,
-      })),
-    ];
-
-     // Conditionally add delivery fee
-      if (deliveryMethod === 'home') {
-        line_items.push({
-          price_data: {
-            currency: 'gbp',
-            product_data: {
-              name: 'Delivery Fee',
-            },
-            unit_amount: 400, //in pence
-          },
-          quantity: 1,
-        });
-      }
-    
-    
-    const session = await stripe.checkout.sessions.create({
-      payment_method_types: ['card'],
-      mode: 'payment',
-      customer_email: userEmail,
-      line_items,
-      success_url: 'https://nedifoods.co.uk/success',
-      cancel_url: 'https://nedifoods.co.uk/cancel',
-      phone_number_collection: { enabled: true },
-      metadata: {
-        cartId: savedCart._id.toString(),
-        userId: userId?.toString() || 'unknown', 
-      },
-    });
-
-    res.json({ url: session.url });
-
-  } catch (error) {
-    console.error('Error creating checkout session:', error.message);
-    res.status(500).json({ error: 'Failed to create Stripe checkout session' });
-  }
-});
 
 
 
