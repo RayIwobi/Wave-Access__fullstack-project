@@ -40,12 +40,12 @@ function Footer() {
         <div className='footer-infoGroup'>
           <div className='footer-contactDetails'>
             <h2 className='headingsinfo'>Contact Details</h2>
-            NG: 32, Modupe Young Street, 
-            Thomas, Ajah, Lekki-Epe Expressway, Lagos, Nigeria<br/><br/>
-            NA: 147, Sam Nujoma Avenue Walvis Bay, Namibia<br/><br/>
-            NA +264-81-844-1704<br/>
-            NG +234-906-818-6433
-            info@ttriangleltd.com
+           <p> <strong>Corporate office</strong><br/>
+            Port harcourt (Main)<br/><br/>
+            #32b, Bori Road, Rumuibekwe Estate,<br/>
+            Port Harcourt, Rivers State,<br/>
+            NG +234-7060758339
+            rayicon@gmail.com</p>
 
             <Link to='/servicerequest'><button className='footerButton'>Request Service</button></Link>
           </div>
