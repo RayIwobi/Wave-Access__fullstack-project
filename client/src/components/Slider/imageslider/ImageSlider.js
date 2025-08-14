@@ -64,17 +64,8 @@ export default function ImageSlider() {
 
       {/* Sliding Text Overlay */}
       <div
-        style={{
-          position: "absolute",
-          bottom: "50px",
-          left: "50px",
-          color: "#fff",
-          fontWeight: "bold",
-          textShadow: "2px 2px 10px rgba(0,0,0,0.5)",
-          zIndex: 10,
-          fontFamily:'Arial, Helvetica, sans-serif',
-          fontSize:'25px'
-        }}
+        className="textmode"
+        
       >
         <AnimatePresence mode="wait">
           <motion.div

@@ -22,7 +22,7 @@ function Menu() {
                 <div className='logoclass'>
                     <div>
                         <div className='webname'>Wave Access</div>
-                        <h6>Systems Engineers & Integrators</h6>
+                        <h6>Systems Engineers <br/>  Integrators &</h6>
                     </div>
                     <img src={meter} alt=''/> 
                 </div>
