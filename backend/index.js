@@ -14,7 +14,6 @@ app.use('/text', TestRouter)
 
 app.use(cors({
     origin: 'https://metering-website-azure.vercel.app',
-    //origin:['http://localhost:3000','https://nedifoods-api.vercel.app', 'https://nedifoods.co.uk'],
     credentials:true,
 }))
 

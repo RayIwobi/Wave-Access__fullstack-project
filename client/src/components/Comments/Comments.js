@@ -16,7 +16,7 @@ function Comments() {
 
     //for getting or showing all the comments
     useEffect(() => {
-       axios.get('https://nediecom-n82p.onrender.com/comments/read' , { withCredentials: true })
+       axios.get('https://metering-website-app.onrender.com/comments/read' , { withCredentials: true })
         // axios.get('http://localhost:10000/comments/read' , { withCredentials: true }) 
         .then(res => {
             console.log(res.data)
