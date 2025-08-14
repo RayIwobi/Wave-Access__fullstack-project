@@ -1,7 +1,8 @@
 import meters from './assets/meter.png'
+import name from './assets/name.png'
 import search from './assets/search.png'
 import './navi.css'
-import { NavLink, Link, useLocation } from 'react-router-dom' 
+import { NavLink, Link, useLocation } from 'react-router-dom'  
 import Menu from '../menu/Menu'
 
 
@@ -10,7 +11,7 @@ function LinkNavigation({color, setColor}) {
     const location = useLocation()
 
     //the two lines below were used to hide the searchbar and cart on the login and other specified pages
-    const hiddenPaths = ['/login','/signup', '/dashboard', '/admin', '/forgotpassword', '/reset-password/', '/update-password', '/mainpage' ];
+    const hiddenPaths = ['/signup', '/dashboard', '/admin', '/forgotpassword', '/reset-password/', '/update-password', '/mainpage' ];
     const shouldHideSection = hiddenPaths.includes(location.pathname);
 
   return (
@@ -21,7 +22,7 @@ function LinkNavigation({color, setColor}) {
             <div className='logoinlinkNav1'>
                 <div className='logo-name'>
                     <Link to='/'><img src={meters} alt='companyLogo' className='searchbarimg'/></Link>
-                    <h3>Meter Limited</h3>
+                    <Link to='/'><img src={name} alt='companyLogo' /></Link>
                 </div>
                 
                 

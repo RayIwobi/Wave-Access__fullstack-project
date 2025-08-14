@@ -19,6 +19,12 @@
     margin-bottom: 100px;
     margin-top: 40px;
 }
+@media screen and (max-width:600px){
+    .sign-up-container{
+        margin-top: 150px;
+        height: 100vh;
+    }
+}
 
 .dashboard-container{
     padding-top: 40px;
@@ -52,6 +58,11 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+@media screen and (max-width:600px){
+    .dashboardContainer{
+        overflow-x: hidden ;
+    }
 }
 
 .dahboard-imag img{

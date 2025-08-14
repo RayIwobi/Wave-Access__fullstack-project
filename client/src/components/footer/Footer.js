@@ -16,7 +16,7 @@ function Footer() {
           <div >
             <div className='logo-settings'>
               <img src={meter} alt='meter' /> 
-              <h4>Meter Limited</h4> 
+              <h4>Wave Access</h4> 
             </div>
             
             <p> 
@@ -77,7 +77,7 @@ function Footer() {
       </div>
 
       <div className='bottom-footer'>
-        <h4>Meter Limited | All rights reserved &copy; 2025 | Built by Techlod</h4>
+        <h4>Wave Access  | All rights reserved &copy; 2025 | Built by Techlod</h4>
       </div>
       
     </div>

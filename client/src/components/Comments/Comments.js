@@ -17,7 +17,7 @@ function Comments() {
     //for getting or showing all the comments
     useEffect(() => {
        axios.get('https://nediecom-n82p.onrender.com/comments/read' , { withCredentials: true })
-      //   axios.get('http://localhost:10000/comments/read' , { withCredentials: true }) 
+        // axios.get('http://localhost:10000/comments/read' , { withCredentials: true }) 
         .then(res => {
             console.log(res.data)
             setGetcomments(res.data)
@@ -44,8 +44,8 @@ function Comments() {
             toast.warning("Type a comment")
         }
         else{
-      // axios.post('http://localhost:10000/comments/sendcomment', {user, comment}, {withCredentials:true})
-         axios.post('https://metering-website-app.onrender.com/comments/sendcomment', {comment}, {withCredentials:true})
+       // axios.post('http://localhost:10000/comments/sendcomment', {user, comment}, {withCredentials:true})
+        axios.post('https://metering-website-app.onrender.com/comments/sendcomment', {comment}, {withCredentials:true})
         .then(res => {
             console.log(res)
             toast.success('Comment added!')

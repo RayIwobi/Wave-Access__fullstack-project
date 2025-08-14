@@ -1,6 +1,7 @@
 import {useState} from 'react'
 import './menu.css' 
 import {Link} from 'react-router-dom'
+import meter from './meter.png'
 
 function Menu() { 
     //CODE FOR MOBILE MENU
@@ -18,7 +19,14 @@ function Menu() {
                 aria-expanded={isOpen}
             >
                 ☰ Menu 
-                <div className='webname'>Meter Limited</div>
+                <div className='logoclass'>
+                    <div>
+                        <div className='webname'>Wave Access</div>
+                        <h6>Systems Engineers & Integrators</h6>
+                    </div>
+                    <img src={meter} alt=''/>
+                </div>
+                
             </button>
 
             {isOpen && (

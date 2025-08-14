@@ -1,6 +1,6 @@
 import './pages.css'
 import img1 from './assets/img1.jpg'
-import img8 from './assets/img8.jpg'
+import wave from './assets/wave.jpg'
 import accuracy from './assets/accuracy.png'
 import dependability from './assets/dependability.png'
 import empowerment from './assets/empowerment.png'
@@ -8,43 +8,37 @@ import leadership from './assets/leadership.png'
 import partnership from './assets/partnership.png'
 import sustainability from './assets/sustainability.png'
 
+
 function About() {
 
 
   return (
     <div className='totalabout'> 
-    <div className='servicetopBanner'>
+    <div className='servicetopBanner' >
         <img src={img1} alt='service' />
         <div className='coverme'></div>
     </div>
     <div  className='aboutus-container'>
-      <div className='inner-container'>
+      <div className='inner-container' >
       <p className='aboutWriteup'>
-        <h1>Meter Limited</h1>
-        At Meter Limited, we specialize in delivering high-precision 
-        metering and instrumentation solutions that power efficiency, 
-        accuracy, and reliability across industries. With a strong 
-        foundation in engineering excellence and innovation, we serve 
-        
-        utilities, industrial plants, energy companies, and infrastructure 
-        developers with state-of-the-art flow meters, pressure instruments, 
-        temperature sensors, level indicators, and automation systems.
+        <h1>Wave Access Engineering</h1>
+        is an indigenous company headquartered at No 32b Bori Road, 
+        Rumuibekwe Estate, Port Harcourt, Rivers State and regionally 
+        located at Plot 274 Ajose Adeogun Street, Victoria Island, Lagos –
+        Nigeria, and duly incorporated in Nigeria on 12th June 2007 by some 
+        seasoned technology and engineering professionals who pulled resources 
+        together from different fields of engineering and technology.<br/><br/>
 
-        From design and manufacturing to calibration and support, we
-         offer end-to-end solutions tailored to the specific needs of 
-         our clients. Our expertise spans across water and wastewater 
-         management, oil and gas, energy, chemical processing, and 
-         manufacturing industries.
+        We have a wealth of experience in ICT/ Telecommunications systems, civil 
+        construction and structural design implementation, electrical & instrumentation, 
+        power and energy, metering systems as well as the development and deployment of 
+        engineering design infrastructure, testing, commissioning, support and consultancy 
+        in Nigeria.<br/><br/>
 
-        Backed by decades of experience, a team of expert engineers, 
-        and a commitment to quality, we continuously raise the bar in 
-        measurement technology. Our clients trust us not just for the 
-        products we supply, but for the accuracy we bring to their 
-        operations, the transparency in our services, and the support 
-        that ensures their systems run smoothly.
+       
       </p>
-      <div className='theaboutimg'>
-      <img src={img8} alt='' className='aboutImage'/>
+      <div className='theaboutimg' >
+      <img src={wave} alt='' className='aboutImage'/>
       </div>
       </div>
       <div className='missionVisionvalues1'>
@@ -194,8 +188,6 @@ function About() {
 
     </div>
 
-    {/* chatbot code below */}
-    <script defer src="https://static.getbutton.io/widget/bundle.js?id=Z84Xu"></script>
   </div> 
   )
 }

@@ -46,8 +46,8 @@ function Dashboard() {
 
    axios.defaults.withCredentials = true
     const handleLogout = () => {
-     axios.get('https://metering-website-app.onrender.com/auth/logout' , { withCredentials: true })
-       //  axios.get('http://localhost:10000/auth/logout' , { withCredentials: true })
+       axios.get('https://metering-website-app.onrender.com/auth/logout' , { withCredentials: true })
+      // axios.get('http://localhost:10000/auth/logout' , { withCredentials: true })
       .then(res => {
         if(res.data.status){
           navigate('/')

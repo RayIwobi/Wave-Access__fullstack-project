@@ -2,6 +2,7 @@ import {useState} from 'react'
 import img2 from './assets/img2.jpg'
 import axios from 'axios'
 
+
 function Contact() {
   const [fullname, setFullname] = useState('')
   const [phone, setPhone] = useState('')
@@ -10,7 +11,10 @@ function Contact() {
 
   const handleSubmit = () => {
     axios.post('http://localhost:10000')
+
   }
+
+
   return (
     <div className='contact-main-comtainer'>  
       <div className='topimg'>
@@ -19,11 +23,21 @@ function Contact() {
     <div className='contact-container'>
       
       <div>
-      <div className='inner-getInTouch'> 
+      <div className='inner-getInTouch' > 
         <div className='Get-in-touch'>
           <h2>Get in touch</h2>
+          <h4>Corporate Office</h4>
+          <div>Port harcourt (Main)<br/>
+          #32b, Bori Road, Rumuibekwe Estate,<br/>
+          Port Harcourt, Rivers State</div><br/><br/>
+
+          <h4>Lagos (Regional)</h4>
+          <div>Plot 274 Ajose Adeogun Street, Victoria island<br/>
+          Lagos State</div>
+
+
           <h4>Address</h4>
-          <div>call us at: +234 7060758339</div>
+          <div>call us at: 07034151583, 07082511737, 08167312238, 08180809616</div>
           <div>Email: rayicon@gmail.com</div><br/>
           <h4> 🕘Business Hours:</h4>
           <div>Monday – Friday: 9:00 AM – 6:00 PM</div>
@@ -50,7 +64,7 @@ function Contact() {
               </iframe>
             </div>
           </div>
-          <div className='outerForm'>
+          <div className='outerForm' >
           <div className='contact-form'>
             <h2>Send us a message</h2>
               <p>Thank you for contacting us. Kindly fill the 
@@ -97,8 +111,6 @@ function Contact() {
       </div>
     </div>
 
-    {/* chatbot code below */}
-    <script defer src="https://static.getbutton.io/widget/bundle.js?id=Z84Xu"></script>
     </div>
   )
 }

@@ -73,8 +73,6 @@ function ServiceRequest() {
       </div>
     </div>
 
-    {/* chatbot code below */}
-    <script defer src="https://static.getbutton.io/widget/bundle.js?id=Z84Xu"></script>
     </div>
   )
 }

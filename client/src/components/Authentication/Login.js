@@ -18,8 +18,8 @@ function Login() {
         useEffect(() => {
             const checkAuth = async () => {
                 try{
-                      const res = await axios.get('https://metering-website-app.onrender.com/auth/verify', {
-                  //const res = await axios.get('http://localhost:10000/auth/verify', {
+                    const res = await axios.get('https://metering-website-app.onrender.com/auth/verify', {
+                  //  const res = await axios.get('http://localhost:10000/auth/verify', {
                         withCredentials:true
                     })
                     if (res.data.status === true){
@@ -60,8 +60,9 @@ function Login() {
   return (
     <div className='sign-up-container'>
         <ToastContainer position="top-right" autoClose={3000} />
-        
     <form className='sign-up-form' onSubmit={handleLogin} id='login-form'>
+    <Link to="/" style={{color:'blue', fontWeight:"600"}}><h5>Back home</h5></Link>
+
         <h2>Sign in</h2>
         
         <div style={{fontSize:'18px', display:'flex', alignItems:'center'}}>Sign in here or <Link to='/signup' style={{color:'blue', fontSize:'18px', fontWeight:'200'}}> &nbsp;Create an account</Link></div>

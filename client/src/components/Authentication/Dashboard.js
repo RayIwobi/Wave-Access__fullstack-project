@@ -16,8 +16,8 @@ function Dashboard() {
 
       axios.defaults.withCredentials = true
      useEffect(() => {
-         axios.get('https://metering-website-app.onrender.com/auth/verify' ,{ withCredentials: true })
-       //axios.get('http://localhost:10000/auth/verify' ,{ withCredentials: true })
+       axios.get('https://metering-website-app.onrender.com/auth/verify' ,{ withCredentials: true })
+       //  axios.get('http://localhost:10000/auth/verify' ,{ withCredentials: true })
         .then((res) => {
             if(res.data.status){
 
@@ -31,8 +31,8 @@ function Dashboard() {
 
   // Step 1: Get the current user
   useEffect(() => {
-    axios.get('https://metering-website-app.onrender.com/auth/dashboard', { withCredentials: true })
-    //axios.get('http://localhost:10000/auth/dashboard', { withCredentials: true })
+   axios.get('https://metering-website-app.onrender.com/auth/dashboard', { withCredentials: true })
+    // axios.get('http://localhost:10000/auth/dashboard', { withCredentials: true })
       .then(res => {
         setCurrentUser(res.data);
       })
@@ -45,7 +45,7 @@ function Dashboard() {
    axios.defaults.withCredentials = true
     const handleLogout = () => {
     axios.get('https://metering-website-app.onrender.com/auth/logout' , { withCredentials: true })
-        //  axios.get('http://localhost:10000/auth/logout' , { withCredentials: true })
+    //      axios.get('http://localhost:10000/auth/logout' , { withCredentials: true })
       .then(res => {
         if(res.data.status){
           navigate('/')

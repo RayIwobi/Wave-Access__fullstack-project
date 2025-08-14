@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './pages.css'
-import serviceimg from './assets/service.jpg'
+import recruit from './assets/recruit.jpg'
 
 function ServiceRequest() {
     const [file, setFile] = useState("")
@@ -13,7 +13,7 @@ function ServiceRequest() {
   return (
     <div>
     <div className='servicetopBanner'>
-        <img src={serviceimg} alt='service' />
+        <img src={recruit} alt='service' />
         <div className='coverme'></div>
     </div>
     <div className='servicerequest-container'>
@@ -79,8 +79,6 @@ function ServiceRequest() {
       </div>
     </div>
 
-    {/* chatbot code below */}
-    <script defer src="https://static.getbutton.io/widget/bundle.js?id=Z84Xu"></script>
     </div>
   )
 }

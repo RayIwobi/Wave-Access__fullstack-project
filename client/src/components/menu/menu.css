@@ -267,3 +267,14 @@ ul ul ul {
     max-height: 500px; /* adjust to fit your links */
   }
 }
+@media screen and (max-width:600px){
+  .logoclass{
+    display: flex;
+    align-items: center;
+  }
+  .logoclass img{
+    width: 40px;
+    height: 40ox;
+    margin-right: 5px;
+  }
+}
