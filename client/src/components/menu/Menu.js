@@ -24,7 +24,7 @@ function Menu() {
                         <div className='webname'>Wave Access</div>
                         <h6>Systems Engineers & Integrators</h6>
                     </div>
-                    <img src={meter} alt=''/>
+                    <img src={meter} alt=''/> 
                 </div>
                 
             </button>
