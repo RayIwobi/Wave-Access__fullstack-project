@@ -100,7 +100,7 @@ function About() {
         <div className='reps-inner'>
           <div className='top-bottom-content'>
             
-          At Meter Limited, we represent more than just products—we embody a 
+          At Wave Access, we represent more than just products—we embody a 
           commitment to precision, trust, technological innovation, and 
           customer-centric excellence. Every solution we deliver, every partnership 
           we build, and every decision we make is guided by a deeper purpose: to be 
@@ -176,7 +176,7 @@ function About() {
 
           <div className='bottom-content'>
           <div className='top-bottom-content'>
-          In everything we do, Meter Limited represents a singular vision: to be 
+          In everything we do, Wave Access represents a singular vision: to be 
           the trusted backbone of intelligent measurement and control systems. Through 
           precision, innovation, and integrity, we help industries move forward—smarter, safer, 
           and stronger.

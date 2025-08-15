@@ -66,7 +66,7 @@ function Home() {
             At Wave Access, we excel in Engineering, Procurement, Automation, Instrumentation, Safety Solutions, Marine Services, ICT, and more. <br/><br/>
             Our commitment to excellence is unwavering, ensuring your projects are not only completed on time but exceed expectations with meticulous attention to detail.
             What sets us apart? Our relentless pursuit of excellence through continuous training and capacity building ensures our team is equipped to tackle any challenge. This dedication has earned us the trust of our clients, fostering strong partnerships that drive innovation and deliver exceptional results.<br/><br/>
-            Discover the Meter Limited difference today. Join us in shaping the future of African industries with cutting-edge solutions and unparalleled service. Contact us now to explore how we can elevate your projects and propel your success forward.
+            Discover the Wave Access Engineering difference today. Join us in shaping the future of African industries with cutting-edge solutions and unparalleled service. Contact us now to explore how we can elevate your projects and propel your success forward.
           </div>
         <div className='hompagevideo'>
           {/* <img src={maincontent} alt='maincontent' /> */}
@@ -140,7 +140,7 @@ function Home() {
       <div className='thirdhomesection'>
         <div className='whatwerep'>
           <h2>What We Represent</h2>
-          <p>Meter Limited is a response to emerging trends on 
+          <p>Wave Access is a response to emerging trends on 
             how quality services should be rendered in our market focus area, 
             in partnership with skilled foreign affiliates and highly experienced professionals.</p>
         </div>
