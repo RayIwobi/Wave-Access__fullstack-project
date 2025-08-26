@@ -13,7 +13,8 @@ const TestRouter = require('./routes/routeTest.js')
 app.use('/text', TestRouter)
 
 app.use(cors({
-    origin: 'https://metering-website-azure.vercel.app',
+    origin: 'http://localhost:3000',
+    // origin: 'https://metering-website-azure.vercel.app',
     credentials:true,
 }))
 
@@ -22,7 +23,6 @@ const  {UserRouter } = require('./routes/user.js')
 const  {CommentRouter } = require('./routes/comment.js')  
 
 // Mount webhook before express.json for raw body
-
 
 const User = require('./models/User.js')
 
@@ -299,30 +299,6 @@ app.get('/categories', async (req, res) => {
     res.status(500).json({ message: 'Server error' });
   }
 });
-
-// app.get('/products', async (req, res) => {
-//   const { category, subcategory } = req.query;
-
-//   try {
-//     let query = {};
-//     if (category) query.category = category;
-//     if (subcategory) query.subcategory = subcategory;
-
-//     const products = await Product.find(query);
-//     res.json(products);
-//   } catch (err) {
-//     res.status(500).json({ message: 'Server error' });
-//   }
-// });
-
-
-//Saving the data before the stripe session
-//const PendingCart = require('./models/PendingCart');
-
-
-
-//STRIPE PAYMENT CODE
-
 
 
 app.listen(process.env.PORT, () => {

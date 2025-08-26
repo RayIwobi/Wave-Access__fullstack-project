@@ -14,11 +14,7 @@ function Imageupload() {
     const [selectweight, setSelectweight] = useState('')
     const [file, setFile] = useState('')
     
-   // const [price, setPrice] = useState('')
-    //const [error, setError] = useState('')
-    
     const [image, setImage] = useState([])
-    // const {_id} = useParams()
 
     const [items, setItems] = useState({
       productname:'',
@@ -52,13 +48,6 @@ function Imageupload() {
 
 
     const handleUpload = () => {
-      // const val = e.target.value;
-      // if(val === '' || Number(val >=0)){
-      //   setPrice(val);
-      //   setError('')
-      // }else{
-      //   setError('stop adding minus or blank entry')
-      // }
         const formdata = new FormData()
         formdata.append('file', file);
         formdata.append('productname', items.productname);

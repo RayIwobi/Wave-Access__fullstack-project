@@ -37,16 +37,7 @@ router.get('/read', async(req, res) => {
   res.status(200).json(userReview)
 })
 
-// router.post('/sendcomment', verifyUser, async(req, res) => {
-//   const {comment} = req.body
-//   const user = await User.findById(req.user.id)
-//   const userinput = new commentsModel({
-//     comment,
-//     user: {id: user._id, username: user.username }
-//   })
-//   await userinput.save()
-//   res.status(200).json(userinput)
-// })
+
 router.post('/sendcomment', async(req, res) => {
   const {user, comment} = req.body
   const userinput = new commentsModel({

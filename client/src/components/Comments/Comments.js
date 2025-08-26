@@ -10,14 +10,13 @@ import 'react-toastify/dist/ReactToastify.css';
 function Comments() {
     const [user, setUser] = useState('')
     const [comment, setComment] = useState('')
-    //const [currentUser, setCurrentUser] = useState('')
     const [getcomments, setGetcomments] = useState([])  
 
 
     //for getting or showing all the comments
     useEffect(() => {
-       axios.get('https://metering-website-app.onrender.com/comments/read' , { withCredentials: true })
-        // axios.get('http://localhost:10000/comments/read' , { withCredentials: true }) 
+      // axios.get('https://metering-website-app.onrender.com/comments/read' , { withCredentials: true })
+         axios.get('http://localhost:10000/comments/read' , { withCredentials: true }) 
         .then(res => {
             console.log(res.data)
             setGetcomments(res.data)
@@ -25,14 +24,6 @@ function Comments() {
         .catch(err => console.log(err))
     }, [])
 
-
-    //to authenticate the user
-//     useEffect(() => {
-//    axios.get('http://localhost:10000/auth/dashboard', {withCredentials: true})
-//        //      axios.get('https://nediecom-n82p.onrender.com/auth/dashboard', {withCredentials: true})
-//         .then(res => setCurrentUser(res.data))
-//         .catch(() => setCurrentUser(null))
-//     },[])
 
     const handlePost = (e) =>{
         e.preventDefault()
@@ -44,8 +35,8 @@ function Comments() {
             toast.warning("Type a comment")
         }
         else{
-       // axios.post('http://localhost:10000/comments/sendcomment', {user, comment}, {withCredentials:true})
-        axios.post('https://metering-website-app.onrender.com/comments/sendcomment', {comment}, {withCredentials:true})
+        axios.post('http://localhost:10000/comments/sendcomment', {user, comment}, {withCredentials:true})
+       // axios.post('https://metering-website-app.onrender.com/comments/sendcomment', {comment}, {withCredentials:true})
         .then(res => {
             console.log(res)
             toast.success('Comment added!')
@@ -63,23 +54,6 @@ function Comments() {
         }
     }
 
-
-    // const handleDelete = (delid) => {
-    //     const deletecomment = getcomments.filter((com) => (
-    //         com._id !== delid
-    //     ))
-    //     setGetcomments(deletecomment)
-
-    //     // axios.delete(`https://nediecom-n82p.onrender.com/comments/deletecomment/${delid}`, {withCredentials:true} )
-    //    axios.delete(`http://localhost:4000/comments/deletecomment/${delid}`, {withCredentials:true} )
-    //     .then(res => {
-    //         toast.success('Deleted successfully')
-    //         console.log(res)
-    //     })
-    //     .catch(err => {
-    //         console.log(err)
-    //     })
-    // }
 
   return (
     <div className='container'>
@@ -104,16 +78,11 @@ function Comments() {
                 onChange={(e) => setComment(e.target.value)}
                 placeholder='Tell us what you think'
                 className='comment-textarea'
-                style={{width:'350px'}}
             />
             </div>
 
             <button onClick={handlePost} >Send</button>
-             {/* {currentUser && currentUser._id ? (
-                <button onClick={handlePost}>Send</button>
-            ):(
-                <div style={{color:'red'}}>login to leave a comment</div>
-            )} */}
+          
             
         </div>
           <hr className='horizontal-line'/>
@@ -129,36 +98,6 @@ function Comments() {
                     </div>
             })}
 
-            {/*  {Array.isArray(getcomments) && getcomments.map((com) to check if getcomments is an array even after logout */}
-            {/* {Array.isArray(getcomments) && getcomments.map((com) => (
-            <div key={com._id} className='comment-display-section'>
-                <div className='user-comment'>
-                <div className='name-time' style={{fontSize:'15px', fontFamily:'Libre Baskerville', fontWeight:'700'}}>
-                    {com.user?.username}&nbsp; &nbsp;
-                    <span className='time' style={{fontSize:'15px'}}><small>{new Date(com.createdAt).toLocaleString()}</small></span>
-                </div>
-                <div style={{fontSize:'16px', fontFamily:'Poppins' , fontWeight:'300'}}>{com.comment}</div>
-                </div>
-
-                {currentUser && currentUser._id === com.user?.id && (
-                <button onClick={() => handleDelete(com._id)} className='deletebtn'>Delete</button>
-                )}<br/>
-            </div>
-            ))} */}
-
-
-            {/* initially commented out */}
-            {/* {getcomments.map((getcom) => (
-               <div key={getcom._id} className='comment-display-section'>
-                <div className='user-comment'>
-                <div className='name-time'>
-                    {getcom.user?.username}&nbsp;
-                    <span className='time'><small>{new Date(getcom.createdAt).toLocaleString()}</small></span>
-                </div>
-                <div>{getcom.comment}</div>
-                </div>
-            </div> 
-            ))} */}
 
         </div>
         </div>

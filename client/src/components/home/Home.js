@@ -4,7 +4,6 @@ import migo from './assets/videos/migo.mp4'
 import telecom from './assets/videos/telecom.mp4'
 import ImageSlider from '../Slider/imageslider/ImageSlider.js'
 import Comments from '../Comments/Comments.js'
-// import maincontent from './assets/maincontent.jpg'
 import Testimonial from '../Testimonial/Testimonial.js'
 import oilgas from './assets/oilgas.jpg'
 import pic1 from './assets/pic1.png'
@@ -16,8 +15,7 @@ import img2 from './assets/img2.webp'
 import img3 from './assets/img3.jpg'
 import img4 from './assets/img4.jpg'
 import img5 from './assets/img5.jpg'
-import img6 from './assets/img6.jpg'
-
+import img6 from './assets/img6.jpg' 
 import OurClients from '../pages/our clients/OurClients.js' 
 
 import {useEffect} from 'react'
@@ -78,9 +76,6 @@ function Home() {
       </div>
       {/* End main page content */}
 
-      {/* Start page content */}
-      
-      {/* End page content */}
       
       <div className='colorcorner'>
         <h1>Exceptional <span>Services</span> We Provide</h1><br/><br/>

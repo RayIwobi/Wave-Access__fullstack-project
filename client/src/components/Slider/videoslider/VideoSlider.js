@@ -44,9 +44,7 @@ export default function ImageSlider() {
           />
         )}
       </div>
-      {/* <p className="slide-counter">
-        {currentIndex + 1} / {mediaFiles.length}
-      </p> */}
+    
     </div>
   );
 }

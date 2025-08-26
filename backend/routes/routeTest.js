@@ -1,4 +1,4 @@
-//crating routes for user authentication
+//creating routes for user authentication
 
 const router = require('express').Router()
 const bcrypt = require('bcrypt')

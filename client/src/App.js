@@ -43,8 +43,6 @@ function App() {
           <Route path='/admin' element={<Admin/>}/>
           <Route path='/catalog' element={<MeteringCatalogs/>}/>
           <Route path='/recruitment' element={<Recruitments/>}/>
-
-          
           <Route path='/signup' element={<Signup/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/mainpage' element={<MainPage/>}/>
@@ -52,7 +50,6 @@ function App() {
           <Route path='/reset-password/:token' element={<ResetPassword/>}/>
           <Route path='/dashboard' element={<Dashboard/>}/>
           <Route path='/update-details' element={<UpdateDetails/>}/> 
-
         </Routes>
         <Footer/>
       </Router>

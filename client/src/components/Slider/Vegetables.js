@@ -15,7 +15,6 @@ function Vegetables() {
 
     
     const [image, setImage] = useState([])
-    // const {_id} = useParams()
 
     const [items, setItems] = useState({
       productname:'',

@@ -76,7 +76,6 @@ function Dashboard() {
           <div><strong>Email: </strong>{currentUser.email}</div><br/>
          <div><strong>Phone number:</strong> {currentUser.phone}</div><br/>
           <div><strong>Address:</strong> {currentUser.address}</div><br/><br/>
-          {/* <Link to='/update-details'><button className='update-profile'>Update profile</button></Link> */}
 
           </div>
         </>
