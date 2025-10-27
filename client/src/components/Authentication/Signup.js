@@ -39,8 +39,8 @@ const Signup = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-       axios.post('https://metering-website-app.onrender.com/auth/signup', {username, email, password, phone, address})
-        // axios.post('http://localhost:10000/auth/signup', {username, email, password, phone, address})
+      axios.post('https://metering-website-app.onrender.com/auth/signup', {username, email, password, phone, address})
+        //  axios.post('http://localhost:10000/auth/signup', {username, email, password, phone, address})
         .then((res) => {
             if(res.data.status){
                 toast.success('user registered')
